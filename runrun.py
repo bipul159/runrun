@@ -291,7 +291,7 @@ def b(uid,pwx,tl):
                 open('/sdcard/ASRAF-OK💥.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
             try:
             	uid=reqs['uid']
-            except 
+           # except 
                  uid=ids
              ckkx=lock_check(uid)
              if ckkx =='LOCK':	
