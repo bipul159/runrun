@@ -294,7 +294,7 @@ def b(uid,pwx,tl):
            # except 
                #  uid=ids
              #ckkx=lock_check(uid)
-             if ckkx =='LOCK':	
+            # if ckkx =='LOCK':	
                 break
             else:
                 continue
