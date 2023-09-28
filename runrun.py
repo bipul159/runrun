@@ -293,7 +293,7 @@ def b(uid,pwx,tl):
             	uid=reqs['uid']
            # except 
                #  uid=ids
-             ckkx=lock_check(uid)
+             #ckkx=lock_check(uid)
              if ckkx =='LOCK':	
                 break
             else:
