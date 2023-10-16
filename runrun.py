@@ -275,7 +275,7 @@ def b(uid,pwx,tl):
             sys.stdout.flush()
             pro = random.choice(ugen)
             #----------[ METHOD ]----------#  
-url = "m.facebook.com"
+#url = "m.facebook.com"
 #-------------------------------
 
 			ses = requests.Session()
